@@ -86,10 +86,10 @@ class Connection:
         self._is_closed = True
 
     async def commit(self):
-        raise errors.NotSupportedError
+        pass
 
     async def rollback(self):
-        raise errors.NotSupportedError
+        pass
 
     async def connect(self):
         if self.connected:
